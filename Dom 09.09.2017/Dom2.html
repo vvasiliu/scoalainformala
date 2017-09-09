@@ -1,0 +1,24 @@
+<html>
+        <head>
+        <body>
+            <p onmouseover="changeColor();" onmouseout="changeColor2();" id="paragraf" >Aici era un text care o sa fie inlocuit de JS</p>
+            <div class="fancy" >text1</div>
+            <div class="fancy" >text2</div>
+            <script>
+                function changeColor () {
+                    document.getElementById("paragraf") . style.color="yellow";
+                }
+                function changeColor2 () {
+                    document.getElementById("paragraf") . style.color="blue";
+                }
+                document.getElementById("paragraf") . innerHTML="am inlocuit continutul paragrafului";
+                document.getElementById("paragraf") . style.color="red";
+                var divurileMeleFancy =  document.getElementsByClassName("fancy");
+                for(var i=0;i<divurileMeleFancy.length;i++){
+                    divurileMeleFancy[i].innerHTML = divurileMeleFancy[i].innerHTML+"A MERS!!";
+                    //https://developer.mozilla.org//
+                }
+            </script>
+        </body>
+        </head>
+        </html>
