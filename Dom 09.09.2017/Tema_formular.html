@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form id="formular" onkeydown="keyDown();">
+            <input
+                name="firstInput"
+                value=""
+                type="text"
+                placeholder="firstInput"
+                onkeyup="keyUp();"
+                onchange="change();"
+                oninput="input(event,this);"
+            /> <br /> <br />
+            <input
+                name="secondInput"
+                value=""
+                type="text"
+                placeholder="secondInput"
+                onkeyup="keyUp();"
+                onchange="change();"
+                oninput="input(event,this);"
+        /> <br /> <br />
+            <input
+                name="thirdInput"
+                value=""
+                type="text"
+                placeholder="thirdInput"
+                onkeyup="keyUp();"
+                onchange="change();"
+                oninput="input(event,this);"
+    /> <br /> <br />
+            <select name="gen">
+                <option value="masculin">M</option>
+                <option value="feminin">F</option><br /><br />
+            </select>
+            Da: <input type="checkbox" value="test" name="verifica"/>
+            Nu: <input type="checkbox" value="test" name="verifica"/>
+            Poate: <input type="checkbox" value="test" name="verifica"/><br /><br />
+            Varsta: <br />
+            <input type="radio" value="test" name="verifica"/>0-20 <br />
+            <input type="radio" value="test" name="verifica"/>21-40 <br />
+            <input type="radio" value="test" name="verifica"/>40+ <br />
+    </body>
+</html>

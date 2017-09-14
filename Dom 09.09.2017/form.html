@@ -35,23 +35,23 @@
             var firstNameElem = document.querySelector("#myform [name=\"firstName\"]")
             var lastNameElem = document.querySelector("#myform [name=\"lastName\"]")
             function keyDown(){
-                //console.log("keyDown",firstNameElem.value);
+                console.log("keyDown",firstNameElem.value);
             }
             function keyUp(){
-                //console.log("keyUp",firstNameElem.value);
+                console.log("keyUp",firstNameElem.value);
             }
             function keyPress(){
-                //console.log("keyPress",firstNameElem.value);
+                console.log("keyPress",firstNameElem.value);
             }
             function change(){
-               //console.log("change",firstNameElem.value);
+               console.log("change",firstNameElem.value);
             }
-            //function input(){
-               // console.log("input",firstNameElem.value);
-           // }
-            //function input(event,elem){
-                //console.log("input",elem.value);
-            //}
+            function input(){
+               console.log("input",firstNameElem.value);
+            }
+            function input(event,elem){
+                console.log("input",elem.value);
+            }
             function input(event,elem){
                 document.getElementById("paragraf").innerHTML="Hello "+firstNameElem.value+" "+lastNameElem.value;
             }    
