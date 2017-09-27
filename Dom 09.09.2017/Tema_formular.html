@@ -6,29 +6,30 @@
     </head>
     <body>
         <form id="formular" onkeydown="keyDown();">
+            <h1>Date personale:</h1>
             <input
-                name="firstInput"
+                name="Prenume"
                 value=""
                 type="text"
-                placeholder="firstInput"
+                placeholder="Prenume"
                 onkeyup="keyUp();"
                 onchange="change();"
                 oninput="input(event,this);"
-            /> <br /> <br />
+            /> 
             <input
-                name="secondInput"
+                name="Nume"
                 value=""
                 type="text"
-                placeholder="secondInput"
+                placeholder="Nume"
                 onkeyup="keyUp();"
                 onchange="change();"
                 oninput="input(event,this);"
-        /> <br /> <br />
+        /> 
             <input
-                name="thirdInput"
+                name="Adresa"
                 value=""
                 type="text"
-                placeholder="thirdInput"
+                placeholder="Adresa"
                 onkeyup="keyUp();"
                 onchange="change();"
                 oninput="input(event,this);"
@@ -38,12 +39,13 @@
                 <option value="feminin">F</option><br /><br />
             </select>
             <h1>Vrei sa te loghezi?</h1>
-            Da: <input type="checkbox" value="test" name="verifica"/>
-            Nu: <input type="checkbox" value="test" name="verifica"/>
-            Poate: <input type="checkbox" value="test" name="verifica"/><br /><br />
-            Varsta: <br />
+            Da: <input type="radio" value="test" name="verifica"/>
+            Nu: <input type="radio" value="test" name="verifica"/>
+            Poate: <input type="radio" value="test" name="verifica"/><br /><br />
+            <h1>Varsta: </h1>
             <input type="radio" value="test" name="verifica"/>0-20 <br />
             <input type="radio" value="test" name="verifica"/>21-40 <br />
-            <input type="radio" value="test" name="verifica"/>40+ <br />
+            <input type="radio" value="test" name="verifica"/>40+ <br /><br />
+            <input type="submit" value="SUBMIT" name="submit" style=""/>
     </body>
 </html>
