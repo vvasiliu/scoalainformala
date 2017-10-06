@@ -5,8 +5,14 @@
 }
 #btnAddItem {
     background-color: lightgreen;
-    border-bottom-left-radius: 20;
-    border-bottom-right-radius: 20;
-    border-top-left-radius: 20;
-    border-top-right-radius: 20;
+    cursor: pointer;
+}
+#lista_items {
+    text-align: center;
+}
+#ordonare_lista {
+    text-align: center;
+}
+#tabel_items {
+    text-align: center;
 }

@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" href="style.css"></link>
-        <script src="script.js"></script>
-    </head>
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
 
-    <body>
-        <div id="titlu_lista">
-            <h3>SHOPPING LIST</h3>
-            <div id="add_item_lista">
-                <input type="text" id="item_cumparat" autofocus
-                    onkeypress="if(event.keyCode==13) {document.getElementById('btnAddItem').click()}" />
-                <button 
-                onclick="addItem(); displayItems();"
-                id="btnAddItem">
+<body>
+    <div id="titlu_lista">
+        <h3>SHOPPING LIST</h3>
+        <div id="add_item_lista">
+            <input type="text" id="item_cumparat" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAddItem').click()}"
+            />
+            <button onclick="addItem(); displayItems();" id="btnAddItem">
                 Add item
-                </button>
-            
-            </div>
-            </div>
+            </button>
 
-            <div id="lista_items">
-
-            </div>
         </div>
-    </body>
+    </div>
+    <div id="ordonare_lista">
+        <button onclick="ordoneazaCrescator(); displayItems();" id="btnOrdoneazaCrescator">
+            Crescator
+        </button>
+        <button onclick="ordoneazaDescrescator(); displayItems();" id="btnOrdoneazaDescrescator">
+                Descrescator
+            </button>
+
+    </div>
+
+    <div id="lista_items">
+        <table id="tabel_items">
+            <th>Item description</th> <br />
+            <th>Action</th>
+        </table>
+        <ul id="MyUl" class="checked"></ul>
+
+    
+    </div>
+</body>
 
 </html>

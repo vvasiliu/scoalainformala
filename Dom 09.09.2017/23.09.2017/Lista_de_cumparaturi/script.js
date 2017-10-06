@@ -10,7 +10,7 @@ function displayItems() {
     var htmlItems=`
     <table>
         <tr>
-            <th>Item description</th>
+            <th>Item description</th> <br />
             <th>Action</th>
         </tr>
     `;
@@ -26,8 +26,4 @@ for(var i=0;i<items.length;i++){
     }
     document.getElementById("lista_items").innerHTML=htmlItems;
 }
-function itemPeCareAmDatClick () {
-    var str = "Mark as buyed";
-    var result = str.strike();
-    document.getElementById("items").innerHTML = result;
-}
+

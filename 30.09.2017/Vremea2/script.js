@@ -84,6 +84,7 @@ function afiseazaPrognoza() {
 
                 var maxima = JSON.parse(json).list[i].main.temp_max;
                 document.getElementById("maxima_zilei"+i).innerHTML = maxima;
+
                 //aici se termina tratamentul raspunsului de la server
             }
         }
