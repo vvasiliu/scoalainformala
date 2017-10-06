@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="titlu_lista">
+            <h3>SHOPPING LIST</h3>
+            <div id="add_item_lista">
+                <input type="text" id="item_cumparat" autofocus
+                    onkeypress="if(event.keyCode==13) {document.getElementById('btnAddItem').click()}" />
+                <button 
+                onclick="addItem(); displayItems();"
+                id="btnAddItem">
+                Add item
+                </button>
+            
+            </div>
+            </div>
+
+            <div id="lista_items">
+
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+#titlu_lista {
+    text-align: center;
+    font-style: italic
+    
+}
+#btnAddItem {
+    background-color: lightgreen;
+    border-bottom-left-radius: 20;
+    border-bottom-right-radius: 20;
+    border-top-left-radius: 20;
+    border-top-right-radius: 20;
+}

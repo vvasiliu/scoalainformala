@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="input_wrapper">
+        <input type="text" id="oras" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAfiseazaVremea').click()}"
+        />
+        <button id="btnAfiseazaVremea" onclick="afiseazaVremea()">Afiseaza Vremea</button>
+        <button id="btnAfiseazaPrognoza" onclick="afiseazaPrognoza()">Prognoza</button>
+    </div>
+    
+    <div id="vremea_wrapper">
+        <img id="poza" /><br />
+
+    
+    Descriere vreme:<span id="descriere_vreme"></span> <br />
+    Umiditate:<span id="umiditate"></span><br />
+    Presiunea:<span id="presiune_atmosferica"></span><br />
+    Maxima:<span id="maxima_zilei"></span><br />
+    Temperatura acum:<span id="temperatura_acum"></span>
+    </div>
+    <div id="prognoza_wrapper">
+        
+    </div>
+    
+    
+</body>
+
+</html>
