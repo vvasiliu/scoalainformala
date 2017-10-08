@@ -11,6 +11,17 @@ function adugareElev () {
     document.getElementById("nume_elev").value = "";
 }
 
+function ordoneazaCrescator() {
+    medieNote.sort();
+    document.getElementById("adaugare_note_wrapper").innerHTML = medieNote;
+}
+
+function ordoneazaDescrescator() {
+    medieNote.sort();
+    medieNote.reverse();
+    document.getElementById("adaugare_note_wrapper").innerHTML = medieNote;
+}
+
 function displayElevi() {
     var htmlElevi=`
     <table>

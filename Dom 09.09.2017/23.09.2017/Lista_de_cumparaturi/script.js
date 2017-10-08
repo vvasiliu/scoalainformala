@@ -27,3 +27,15 @@ for(var i=0;i<items.length;i++){
     document.getElementById("lista_items").innerHTML=htmlItems;
 }
 
+
+
+function ordoneazaCrescator() {
+    items.sort();
+    document.getElementById("ordonare_lista").innerHTML = items;
+}
+
+function ordoneazaDescrescator() {
+    items.sort();
+    items.reverse();
+    document.getElementById("ordonare_lista").innerHTML = items;
+}

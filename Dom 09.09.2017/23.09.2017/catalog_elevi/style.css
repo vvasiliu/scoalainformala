@@ -1,8 +1,43 @@
 #elevi_wrapper {
     background-color: green;
-    border-radius: 5%;
+    
 }
 #note_wrapper {
     background-color: lightblue;
-    display: none;
+    
+}
+#btnAdaugareElev {
+    background-color: red;
+    cursor: pointer;
+}
+#btnAdaugNota {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+#btnAscundeNotele {
+    background-color: darkblue;
+    cursor: pointer;
+}
+#veziNotele {
+    background-color: green;
+    cursor: pointer;
+}
+#btnOrdoneazaDescrescator {
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+#btnOrdoneazaCrescator {
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+#wrap {
+    width: 485px;
+}
+.left {
+    width: 480px;
+
+}
+.right {
+    width: 480px;
+    
 }

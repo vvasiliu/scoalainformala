@@ -7,42 +7,53 @@
 </head>
 
 <body>
-    
-       
-            <div id="elevi_wrapper">
-                <h3>Lista elevi</h3>
-                <div id="adaugare_elev_wrapper">
-                    <input type="text" id="nume_elev" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAdaugareElev').click()}"
-                    />
-                    <button onclick="adugareElev(); displayElevi();" id="btnAdaugareElev">
-                        Adaugare elev
+
+    <div id="wrap">
+        <div id="elevi_wrapper" class="left">
+            <h3>Lista elevi</h3>
+            <div id="adaugare_elev_wrapper">
+                <input type="text" id="nume_elev" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAdaugareElev').click()}"
+                />
+                <button onclick="adugareElev(); displayElevi();" id="btnAdaugareElev">
+                    Adaugare elev
+                </button>
+                <div id="ordonare_lista">
+                    <button onclick="ordoneazaCrescator(); displayNumeElev();" id="btnOrdoneazaCrescator">
+                        Crescator
+                    </button>
+                    <button onclick="ordoneazaDescrescator(); displayNumeElev();" id="btnOrdoneazaDescrescator">
+                        Descrescator
                     </button>
                 </div>
-        
 
 
-        <div id="lista_elevi">
 
-        </div>
-        </div>
-        
-        <div id="note_wrapper">
-            <button id="btnAscundeNotele" onclick="hideNote();">
-                Ascunde notele
-            </button>
-            <div>Nume elev:
-                <span id="span_nume_elev"></span>
+                <div id="lista_elevi">
+
+                </div>
             </div>
-            <div id="adaugare_note_wrapper">
-                <input type="number" id="nota_elev" />
-                <button id="btnAdaugNota" onclick="adaugaNota(); displayNote(); medieNote[indexElevPeCareAmDatClick]=medieNoteElev();displayElevi();">Adauga nota</button>
 
+            <div id="note_wrapper" class="right">
+
+                <button id="btnAscundeNotele" onclick="hideNote();">
+                    Ascunde notele
+                </button>
+                <div>Nume elev:
+                    <span id="span_nume_elev"></span>
+                </div>
+                <div id="adaugare_note_wrapper">
+                    <input type="number" id="nota_elev" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAdaugNota').click()}"
+                    />
+                    <button id="btnAdaugNota" onclick="adaugaNota(); displayNote(); medieNote[indexElevPeCareAmDatClick]=medieNoteElev();displayElevi();">Adauga nota</button>
+
+                </div>
+
+
+                <div id="lista_note">
+
+                </div>
             </div>
-        
-    
-    <div id="lista_note">
-
-    </div>
+        </div>
     </div>
 </body>
 
