@@ -13,7 +13,12 @@
     <div class="header">
         <a href="./index.html" style="text-decoration: none; color: red">
             <h1 style="display: inline-block">Magazin virtual</h1>
-        </a>
+        </a><br /><br />
+
+        <div id="cautare">
+            <input type="text" id="cautare_produse" autofocus style="margin-right: 10%">
+            <button id="btnSearch" onclick="cautaProduse(); displayProduse();">Search</button>
+        </div>
 
         <a href="./admin.html" style="text-decoration: none; color: blue">
             <button class="btnAdmin" id="butonAdmin">&#x1f512; Admin</button>
@@ -24,22 +29,54 @@
 
     </div>
 
+    
+
     <div id="produse">
         <div class="col-sm-4" style="float:left">
+            Telegraf<span id="titlu_poza"></span>
             <img src="telegraf.jpg"><br />
-            Date despre telegraf:<span></span><br />
-            Pret: <span></span>
+            <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+           
+            Pret: <span id="pret_produs"></span>
         </div>
         <div class="col-sm-4" style="float:left">
+            Telegraf automatic<span></span>
             <img src="tm.jpg" id="poza2"><br />
-            Date despre telegraf:<span></span><br />
-            Pret:<span></span>
+            <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+            Pret: <span id="pret_produs"></span>
         </div>
         <div class="col-sm-4" style="float:left">
+            Telegraf auto<span></span>
             <img src="tm2.jpg" id="poza3"><br />
-            Date despre telegraf:<span></span><br />
-            Pret:<span></span>
+            <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+            Pret: <span id="pret_produs"></span>
+        </div><br />
+        <div class="col-sm-4" style="float:left">
+            Telegraf mic<span></span>
+                <img src="telmicM.jpg" id="poza4"><br />
+                <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+                Pret: <span id="pret_produs"></span>
         </div>
+        <div class="col-sm-4" style="float:left">
+            Telegraf mic<span></span>
+                <img src="telmic2M.jpg" id="poza5"><br />
+                <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+                Pret: <span id="pret_produs"></span>
+        </div>
+        <div class="col-sm-4" style="float:left">
+            Telegraf mediu<span></span>
+                <img src="telmediuM.jpg" id="poza6"><br />
+                <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+                Pret: <span id="pret_produs"></span>
+        </div>
+        <div class="col-sm-4" style="float:left">
+            Telegraf mediu<span></span>
+                <img src="telmediu2M.jpg" id="poza7"><br />
+                <button id="btnDetails" style="text-decoration: none; color: black">Details</button><br />
+                Pret: <span id="pret_produs"></span>
+        </div>
+      
+
 
     </div>
 
