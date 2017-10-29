@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Agenda telefonica</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    
+    <br /><br /><br /><br />
+    <span id="title_span">AGENDA</span><br />
+    <div class="main" id="input_wrapper">
+        Nume: <input type="text" id="nume" autofocus style="margin-right: 5%">
+        Numar: <input type="text" id="numar" style="margin-right: 20%" onkeypress="if(event.keyCode==13) {document.getElementById('addBtn').click()}">
+        <button id="addBtn" onclick="adaugaContact(); displayContacte();">Adauga Contact</button>
+        
+    </div><br />
+
+    <div class="main" id="agenda" style="display: none;">
+
+    </div>
+
+
+</body>
