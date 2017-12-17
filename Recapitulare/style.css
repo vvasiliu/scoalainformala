@@ -19,3 +19,38 @@
 a:link {
     text-decoration: none;
 }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#box1 {
+    border-bottom: 100px;
+    width: 350px;
+    color: black;
+    background-color: gray;
+    height: 10cm;
+    float:left;
+    
+}
+#box2 {
+    border: 40px;
+    float: right;
+    width: 350px;
+    color: black;
+    height: 10cm;
+    background-color: green;
+    
+}
+#container {
+    width: 100%;
+    display: inline-block;
+}
+#title {
+    text-align: center;
+}
+#formular {
+    float: left;
+}
+#message {
+    float: right;
+}
