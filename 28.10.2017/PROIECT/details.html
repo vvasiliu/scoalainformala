@@ -2,17 +2,89 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"></link>
-        <script src="script.js"></script>
+        <script src="details.js"></script>
     </head>
 
     <body class="body">
+            <div class="carousel">
+                    
+                            <ul class="ct clearfix">
+                    
+                                <li>
+                                    <a href="#">
+                                        <img src="telmicM.jpg">
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="#">
+                                        <img src="telmediuM.jpg">
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="#">
+                                        <img src="tm.jpg">
+                                    </a>
+                                </li>
+                    
+                                <li>
+                                    <a href="#">
+                                        <img src="telmic2M.jpg">
+                                    </a>
+                                </li>
+                    
+                            </ul>
+                    
+                            <a href="#" class="arrow pre">
+                                <</a>
+                    
+                                    <a href="#" class="arrow next">></a>
+                    
+                                    <ul class="bullet">
+                    
+                                        <li class="active"></li>
+                    
+                                        <li></li>
+                    
+                                        <li></li>
+                    
+                                        <li></li>
+                    
+                                    </ul>
+                    
+                        </div>
 
 <!--folosim GRID STYLE + DIV cu float-->
 
         <div class="header">
             <a href="./index.html" style="text-decoration: none; color: red">
-                <h>Magazin virtual</h1>
+                <h1>Magazin virtual</h1>
+            </a>
+            <a href="./cos.html" style="text-decoration: none; color: blue">
+                <button class="btnCos" id="butonCos">&#36; Cos</button>
             </a>
         </div>
+        <div id="detalii_produs">    
+            <div style= "display: inline-block">
+                <img id="img" src="" />
+            </div> 
+
+            <div style="width: 350px; display: inline-block;">
+                    Name:<br />
+                    <span id="name"></span><br/><br />
+                    Stoc:
+                    <span id="stoc"></span><br /><br />
+                    Provenienta:
+                    <span id="provenienta"></span><br /><br />
+                <input type="number" value="0" min="0" />
+                <br />
+                <button onclick="addToCart()">Adauga in cos</button>
+            </div>       
+        </div>
+
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="carousel.js"></script>
+        
     </body>
 </html>

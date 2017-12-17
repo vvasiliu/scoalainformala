@@ -578,8 +578,8 @@
 /*</editor-fold>*/
 
 .carousel {
-    max-width: 980px;
-    height: 400px;
+    max-width: 580px;
+    height: 200px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -588,8 +588,8 @@
   .ct { position: relative; }
   
   .ct img {
-    height: 400px;
-    width: 980px;
+    height: 230px;
+    width: 450px;
   }
   
   .ct li { float: left; }
@@ -617,7 +617,7 @@
     color: rgba(0,0,0,0.3);
     font-size: 80px;
     position: absolute;
-    top: 40%;
+    top: 35%;
   }
   
   .arrow:hover { color: rgba(0,0,0,0.9); }
@@ -630,4 +630,8 @@
     content: "";
     display: block;
     clear: both;
+  }
+
+  #detalii_produs {
+      text-align: center;
   }

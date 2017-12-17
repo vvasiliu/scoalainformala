@@ -31,11 +31,11 @@ for(var i=0;i<items.length;i++){
 
 function ordoneazaCrescator() {
     items.sort();
-    document.getElementById("ordonare_lista").innerHTML = items;
+    //document.getElementById("ordonare_lista").innerHTML = items;
 }
 
 function ordoneazaDescrescator() {
     items.sort();
     items.reverse();
-    document.getElementById("ordonare_lista").innerHTML = items;
+    //document.getElementById("ordonare_lista").innerHTML = items;
 }
