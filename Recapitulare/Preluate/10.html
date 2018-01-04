@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        
+        
+    <style>
+        #form_wrapper {
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: lightgray;
+            width: 700px;
+            height: 380px;
+
+        }
+        #box1{
+            padding: 5px;
+            float: left; 
+        }
+
+        #box2{
+            padding: 5px;
+            float: right;
+        }
+        input {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            width: 300px;
+            height: 40px;
+            margin: 7px;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        textarea {
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            width: 300px;
+            margin: 7px;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        #submitButton {
+            width: 680px;
+            height: 70px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 9px;
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: rgb(117, 117, 117);
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="form_wrapper">
+        <center><h2 style="font-family: 'Nunito', sans-serif; font-weight: bolder;">Contact Form</h2></center>
+        <div id="box1">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <span></span>
+                <input type="text" name="eMail" placeholder="Email adress"><br>
+                <span></span>
+                <input type="text" name="Subject" placeholder="Subject"><br>
+                <span></span>
+        </div>
+
+        <div id="box2">
+                <textarea placeholder="Message" style="height: 188px"></textarea><br>
+        </div>
+        <center><button id="submitButton" style="font-family: 'Nunito', sans-serif; font-weight: bolder; font-size: 20px;">Submit</button></center>
+
+    </div>
+
+
+</body>
+
+</html>
