@@ -635,3 +635,44 @@
   #detalii_produs {
       text-align: center;
   }
+
+
+  body {
+      margin: 0px;
+      border: 0px;
+  }
+  #header {
+      width: 100%;
+      height: 120px;
+      background: black;
+      color: white;
+  }
+  #sidebar {
+      width: 300px;
+      height: 400px;
+      background: #2CE2E8;
+      float: left;
+  }
+  #data {
+      height: 700px;
+      background: #820333;
+      color: white;
+      font-family: helvetica;
+      font-size: 25px;
+  }
+  #adminLogo {
+      border-radius: 50px;
+  }
+  ul li {
+      padding: 20px;
+      border-bottom: 2px solid gray;
+  }
+  ul li:hover {
+      background: #820333;
+      color: white;
+  }
+  #titlu_original {
+      float: left;
+      border-radius: 50px;
+      margin-right: none;
+  }
