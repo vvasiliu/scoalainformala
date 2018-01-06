@@ -579,10 +579,11 @@
 
 .carousel {
     max-width: 580px;
-    height: 200px;
-    margin: 0 auto;
+    height: 270px;
+    margin: auto;
     overflow: hidden;
     position: relative;
+   
   }
   
   .ct { position: relative; }
@@ -590,6 +591,7 @@
   .ct img {
     height: 230px;
     width: 450px;
+    margin: auto;
   }
   
   .ct li { float: left; }
