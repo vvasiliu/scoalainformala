@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <!--
+    
+Folositi url-urile din variabilele de mai jos pentru a face requesturi catre server:
+var MENU_SERVER_URL = "https://restaurant-menu-v1.firebaseio.com/.json";
+var MENU_ITEM_SERVER_URL = "https://restaurant-menu-v1.firebaseio.com/menu/";
+Exemplu de apel pentru detalii preparat: https://restaurant-menu-v1.firebaseio.com/menu/0.json - unde 0 este id-ul preparatului-->
+    <title>Mancatorie - Home</title>
+</head>
+
+<body class="body">
+    <div class="search_wrapper">
+        <a href="./1meniu.html" style="text-decoration: none; color: black">
+        <h1>Mancatorie</h1> </a>
+        <input class="input" type="text" id="search" autofocus onkeypress="if(event.keyCode==13) { document.getElementById('btnAfiseazaProduseDupaIngredient').click();}"
+        />
+        <button class="button-search" id="btnAfiseazaProduseDupaIngredient" onclick="afiseazaProduseDupaIngredient()">Cauta in ingrediente</button>
+        <a href="./3contact.html">
+            <button class="button-contact" id="btnContact">Contact</button>
+        </a>
+    </div>
+    <div class="produse_wrapper" id="toateProdusele">
+        <table>
+            <tr style="display:inline-block">
+                
+                <!-- <td style="width: 20%">
+                    <img id="imagine" src="http://www.latteartguide.com/wp-content/uploads/2016/01/cafe-latte.jpg" />
+                </td>
+                <td>
+                    <span id="nume"></span>
+                    <span id="ingrediente"></span>
+                    <span id="reteta"></span>
+                </td>
+                <td>
+                    <button>DETALII</button>
+                </td>-->
+            </tr>
+            <!-- <img id="imagine" src="" />
+            <span id="nume"></span>
+            <span id="ingrediente"></span>
+            <span id="reteta"></span>-->
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

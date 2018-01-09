@@ -678,3 +678,7 @@
       border-radius: 50px;
       margin-right: none;
   }
+  #copyright {
+      vertical-align: baseline;
+      position: bottom;
+  }
